@@ -74,10 +74,8 @@ div.endNav span {
   
 }
 
-span.fa.fa-angle-down {
-    background-color: white;
-    padding: 0 2px;
-    border-radius: 50%;
+span.fa.fa.chevron-circle-down {
+  
     color: #15a4fa;
 }
 
@@ -135,6 +133,7 @@ span.fa.fa-angle-down {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0;
 
 }
 
@@ -180,7 +179,7 @@ span.fa.fa-circle.blue {
 
 span.fa.fa-circle.violet {
     color: #7874cf;
-    font-size: 8px;
+    font-size: 10px;
     padding: 0 10px;
 }
 
@@ -205,7 +204,7 @@ main {
 
 .central {
     width: 100%;
-    background: #eef1f7;
+    background: white;
     
 
 }
@@ -221,13 +220,14 @@ h1 {
 .centralHeader {
     border-bottom: 1px solid #dadee9;
     padding: 35px 0;
-    display: inline-block;
+    background: #eef1f7;
 }
 
 
 .listOfBooks{
     border-top: 1px solid white;
     border-bottom: 1px solid #dadee9;
+    background: #eef1f7;
 }
 
 .listOfBooks, .listOfBooks > ul {
@@ -248,11 +248,13 @@ h1 {
 }
 li.element {
     color: #b1b7c8;
+    cursor: pointer;
 }
 li.selected {
     background-color: #9eb2cc;
     color: white;
     border-radius: 50px;
+    cursor: pointer
 }
 
 .searchPlaceholder {
@@ -305,10 +307,13 @@ input[type=text] {
         color: #6f7d95;
         font-size: 12px;
     }
+
     img {
        box-shadow: 0px 2px 5px #888888;
        border-radius: 5px;
     }
+
+  
     
 }
 
@@ -385,6 +390,17 @@ and (max-device-width : 480px) {
        flex-basis: 24%;
    }
 
+   .menu, .secondMenu, .thrdMenu {
+       font-size: 13px;
+   }
+
+   .colLeft {
+       display: none;
+   }
+   .listOfBooks ul li {
+    text-align: center;
+    }
+
 }
 
 /* -------TABLET LANDSCAPE ------*/
@@ -392,6 +408,17 @@ and (max-device-width : 480px) {
     .col {
         flex-basis: 31.5%;
     }
+
+    .menu, .secondMenu, .thrdMenu {
+        font-size: 13px;
+    }
+    .colLeft {
+        display: none;
+    }
+
+    .listOfBooks ul li {
+        text-align: center;
+        }
  
  }
  
